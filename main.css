@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#global-scale {
+    width: calc(100vw + 200px);
+    max-width: 1930px;
+    height: 69.5rem;
+    background-color: #0A2540;
+    background-image: url(./media/image.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  
+}
+
+.global-scale-wrapper {
+    margin: 0 auto;
+    width: 1, 80px;
+    height: 911px;
+    max-width: 1080px;
+    padding: 287px 0px 128px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.global-scale-content span,
+.global-scale-content h2,
+.global-scale-content p,
+.global-scale-content-text p span,
+.global-scale-content-text span,
+.global-scale-content-text p,
+.bfg-main-info-wrapper span,
+.bfg-info-wrapper .atlas-info h3,
+.bfg-info-wrapper .checkout-info h3,
+.bfg-info-wrapper .payments-info h3,
+.bfg-info-wrapper .invoice-info h3,
+.bfg-info-wrapper .atlas-info p,
+.bfg-info-wrapper .checkout-info p,
+.bfg-info-wrapper .payments-info p,
+.bfg-info-wrapper .invoice-info p,
+.dfd-main-info-wrapper span,
+.dfd-main-info-wrapper h2,
+.dfd-main-info-wrapper p,
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation button>span {
+    font-family: "Inter", serif;
+    font-weight: 500;
+}
+
+.global-scale-content {
+    width: 100%;
+    max-width: 50.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.global-scale-content span,
+.global-scale-content h2,
+.global-scale-content p {
+    padding-left: 1rem;
+    padding-right: 7rem;
+}
+
+.global-scale-content span,
+.dfd-main-info-wrapper>span {
+    font-size: 1.0725rem;
+    line-height: 1.75rem;
+    letter-spacing: .0125rem;
+    color: #00d4ff;
+}
+
+.global-scale-content h2,
+.main_content_wrapper h2,
+.bfg-main-info-wrapper h2,
+.dfd-main-info-wrapper h2 {
+    font-size: 2.1987rem;
+    line-height: 3rem;
+    letter-spacing: -0.0125rem;
+    color: #fff;
+}
+
+.global-scale-content p,
+.main_content_wrapper>span,
+.main_content_wrapper p,
+.main_content_wrapper button,
+.er_content_container>span,
+.er_content_container p,
+.cards-wrapper p,
+.dfd-main-info-wrapper p {
+    font-size: 1.1075rem;
+    line-height: 1.75rem;
+    letter-spacing: .0125rem;
+    color: #ADBDCC;
+}
+
+.global-scale-content-wrapper {
+    width: 100%;
+    height: 88px;
+    display: flex;
+}
+
+.global-scale-content-text {
+    width: 270px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.global-scale-content-text span,
+.global-scale-content-text p {
+    padding-right: 32px;
+    padding-left: 16px;
+    text-align: left;
+}
+
+.global-scale-content-text>span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .0063rem;
+    color: #fff;
+    border-left: .0625rem solid #00D4FF;
+}
+
+.global-scale-content-text p span {
+    text-align: left;
+    font-size: .8569rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
+    color: #00D4FF;
+}
+
+.global-scale-content-text p {
+    font-size: 13.7104px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    color: #ADBDCC;
+}
+
+/* section enterprise reinvention */
+#enterprise-reinvention {
+    margin-top: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.er_main_wrapper,
+.bfg-wrapper {
+    width: 100%;
+    max-width: 67.5rem;
+    height: 56.6875rem;
+    margin: 8rem auto;
+
+}
+
+.main_content_wrapper {
+    max-width: 75%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main_content_wrapper span,
+.main_content_wrapper h2,
+.main_content_wrapper p {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-family: "Inter", serif;
+    font-weight: 500;
+}
+
+.main_content_wrapper>span,
+.main_content_wrapper p,
+.main_content_wrapper button,
+.er_content_container>span,
+.er_content_container p,
+.cards-wrapper p,
+.bfg-main-info-wrapper p,
+.bfg-main-info-wrapper span,
+.bfg-info-wrapper .atlas-info p,
+.bfg-info-wrapper .checkout-info p,
+.bfg-info-wrapper .payments-info p,
+.bfg-info-wrapper .invoice-info p {
+    font-size: 1.0281rem;
+    line-height: 1.75rem;
+    letter-spacing: .0125rem;
+}
+
+.main_content_wrapper>span {
+    color: #635BFF;
+}
+
+.main_content_wrapper h2,
+.bfg-main-info-wrapper h2,
+.bfg-info-wrapper .atlas-info h3,
+.bfg-info-wrapper .checkout-info h3,
+.bfg-info-wrapper .payments-info h3,
+.bfg-info-wrapper .invoice-info h3 {
+    color: #0A2540;
+}
+
+.main_content_wrapper p,
+.bfg-main-info-wrapper p,
+.bfg-info-wrapper .atlas-info p,
+.bfg-info-wrapper .checkout-info p,
+.bfg-info-wrapper .payments-info p,
+.bfg-info-wrapper .invoice-info p {
+    color: #425466;
+}
+
+.main_content_wrapper p>span {
+    color: #635BFF;
+}
+
+.er_button {
+    width: 10.625rem;
+    height: 2.0625rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: #635BFF;
+    border: none;
+    border-radius: 1.0313rem;
+    cursor: pointer;
+}
+
+.er_button>span,
+.er_content_container>span {
+    padding-right: 1rem;
+    color: #fff;
+    font-size: .8719rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
+    text-align: left;
+}
+
+.er_content_cards_wrapper {
+    width: 75%;
+    height: 45.2%;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.er_content_wrapper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.er_content_container {
+    width: 100%;
+    height: 27.3%;
+    padding-left: 1rem;
+    padding-right: 1.25rem;
+
+}
+
+.er_content_container>span {
+    padding-left: 1rem;
+    padding-right: 7rem;
+    color: #0A2540;
+    border-left: 1px solid #635BFF;
+}
+
+.er_content_container p {
+    padding-left: 1rem;
+    padding-right: 1.25rem;
+    font-size: .8644rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
+    color: #425466;
+}
+
+.er_content_container:last-child span {
+    font-size: .8719rem;
+    line-height: 24px;
+    letter-spacing: .2px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.er_icon_wrapper {
+    margin-top: .5rem;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.payments_icon,
+.connect_icon {
+    display: flex;
+    align-items: center;
+    gap: .875rem;
+}
+
+.er_icon_wrapper img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.cards-wrapper {
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(rgba(238, 186, 14, 0.377), rgba(240, 185, 33, 0.452)),
+        url(./media/amazon-crm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.card_icons {
+    width: 100%;
+    padding: 1.5rem 1.5rem 15.625rem 1.5rem;
+    margin-top: 2.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-wrapper p {
+    width: 65%;
+    max-width: 29.25rem;
+    padding-right: 1.5rem;
+    margin: 0 19.875rem 1.5rem 1.5rem;
+    font-size: 1.5362rem;
+    line-height: 2.25rem;
+    color: #fff;
+}
+
+.partners_logo_wrapper {
+    width: 100%;
+    height: 8.5%;
+    margin-top: 2.5rem;
+    display: flex;
+}
+
+.partners-logo {
+    margin: auto 0;
+    padding-top: 1.25rem;
+    cursor: pointer;
+}
+
+.partners-logo:first-child {
+    border-top: 1px solid #635BFF;
+}
+
+.partners_logo_wrapper .partners-logo:nth-child(2) {
+    border-top: 1px solid rgba(240, 185, 33, 0.452)
+}
+
+.partners_logo_wrapper .partners-logo:nth-child(3) {
+    border-top: 1px solid rgba(33, 192, 240, 0.445)
+}
+
+.partners-logo:last-child {
+    border-top: 1px solid #f3434391;
+}
+
+/* section built for growth */
+
+#built-for-growth {
+    width: 100%;
+    height: 122.375rem;
+    background: #F6F9FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bfg-wrapper {
+    width: 100%;
+    max-width: 67.5rem;
+    height: 112.8125rem;
+    padding-top: 8rem;
+    padding-bottom: 16.3125rem;
+
+}
+
+.bfg-main-info-wrapper {
+    width: 60.8%;
+    max-width: 50.625rem;
+    padding-right: 7rem;
+    transform: translateX(10%);
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bfg-main-info-wrapper span {
+    color: #635BFF;
+}
+
+.bfg-content-wrapper {
+    width: 100%;
+    max-width: 67.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bfg-left-content-wrapper {
+    width: 50%;
+    min-width: 6.25rem;
+    min-height: 12.625rem;
+    height: 6.7%;
+    padding-top: 8.125rem;
+}
+
+.bfg-right-content-wrapper {
+    width: 50%;
+    min-width: 6.25rem;
+    min-height: 12.625rem;
+    height: 58%;
+}
+
+.bfg-info-wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    box-shadow: 0px 30px 45px -30px #32325D40;
+    box-shadow: 0px 18px 36px -18px #0000001A;
+
+}
+
+.bfg-info-wrapper .atlas-info,
+.bfg-info-wrapper .checkout-info,
+.bfg-info-wrapper .payments-info,
+.bfg-info-wrapper .invoice-info {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.bfg-info-wrapper .icon-wrapper {
+    width: 5.375rem;
+    height: 2.5rem;
+    padding: .625rem 1rem .625rem .625rem;
+    gap: .75rem;
+    display: flex;
+    align-items: center;
+    background: #F6F9FC;
+}
+
+.bfg-info-wrapper .atlas-info h3,
+.bfg-info-wrapper .checkout-info h3,
+.bfg-info-wrapper .payments-info h3,
+.bfg-info-wrapper .invoice-info h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0%;
+}
+
+/*  section designed for developers */
+#designed-for-developers {
+    position: absolute;
+    top: 4250px;
+    width: 100%;
+    height: 81.875rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
+    background-color: #0A2540;
+
+}
+
+.dfd-wrapper {
+    width: 100%;
+    max-width: 67.5rem;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 23.8125rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.dfd-info-wrapper {
+    width: 100%;
+    height: 30.625rem;
+    display: flex;
+}
+
+.dfd-info-wrapper .dfd-main-info-wrapper {
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 73px;
+}
+
+.dfd-main-info-wrapper span,
+.dfd-main-info-wrapper h2,
+.dfd-main-info-wrapper p {
+    padding-left: 1rem;
+    padding-right: 4rem;
+}
+
+.coding-presentation {
+    width: 50%;
+    height: 100%;
+}
+
+.dfd-button {
+    width: 10.625rem;
+    height: 2.0625rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .3rem;
+    background-color: #00D4FF;
+    border: none;
+    border-radius: 1.0313rem;
+    cursor: pointer;
+}
+
+.dfd-button>span {
+    padding: 0 1rem;
+}
+
+.dfd-button:hover {
+    transform: scale(1.1);
+}
+
+.dfd-explanation-wrapper {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dfd-explanation-wrapper .dfd-explanation {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.dfd-explanation-wrapper .dfd-explanation>img:nth-child(2) {
+    padding-bottom: 2rem;
+}
+
+.dfd-explanation>img {
+    padding-bottom: .5rem;
+}
+
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation img {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.dfd-explanation h5,
+.dfd-explanation p,
+.dfd-explanation button>span {
+    font-size: .8494rem;
+    line-height: 1.5rem;
+    letter-spacing: .0125rem;
+
+}
+
+.dfd-explanation h5 {
+    color: #FFFFFF;
+}
+
+.dfd-explanation p {
+    color: #ADBDCC;
+}
+
+.dfd-explanation button>span {
+    color: #00D4FF;
+    padding-right: 1rem;
+}
+
+.dfd-explanation button {
+    width: 100%;
+    height: 2.0625rem;
+    pad: 1rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
