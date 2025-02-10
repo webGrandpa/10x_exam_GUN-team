@@ -9,3 +9,4 @@ between of them part - from Usho Kakhidze
 
 PLEASE note us what can we make better, what you like to see on exams from us....
 dont shy to commit all mistakes what you will see
+we will be glad to see what issues we have
