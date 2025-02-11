@@ -1,5 +1,11 @@
+@media( max-width: 768px ){
+    .advertisment-item{
+        width: 100% !important;
+    }
+}
+
 .on-footer-text-wrapper{
-    margin-left: 230px;
+    /* margin-left: 230px; */
 }
 
 .on-footer-logo{
@@ -28,16 +34,17 @@
 }
 
 .on-column-wrapper{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 8.11px;
     margin: 0px 7.73px 12.77px 7.73px;
     cursor: pointer;
     margin-top: 64px;
 }
 
-.on-column1, .on-column2, .on-column3{
-    width: 338.66px;
+.advertisment-item{
+    width: 33.3%;
     height: 528.41px;
     display: flex;
     flex-direction: column;

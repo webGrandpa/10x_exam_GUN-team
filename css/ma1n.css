@@ -11,8 +11,7 @@
 #global-scale {
     width: 100%;
     height: auto;
-    background-color: #0A2540;
-    background-image: url(./media/image.svg);
+    background: #0A2540 url(/media/image.svg );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,6 +151,7 @@
 /*         tablets : 768px       */
  @media screen and (max-width: 768px) {
     .global-scale-wrapper {
+        width: 100%;
         padding: 8rem 0 4rem 0; 
         gap: 3rem;
     }
@@ -248,7 +248,7 @@
 .bfg-wrapper {
     width: 100%;
     max-width: 67.5rem;
-    height: 56.6875rem;
+    /* height: 56.6875rem; */
     margin: 8rem auto;
 
 }
@@ -339,7 +339,7 @@
 
 .er_content_cards_wrapper {
     width: 75%;
-    height: 45.2%;
+    /* height: 45.2%; */
     display: flex;
     margin-top: 4rem;
 }
@@ -408,7 +408,7 @@
     width: 75%;
     height: 100%;
     background: linear-gradient(rgba(238, 186, 14, 0.377), rgba(240, 185, 33, 0.452)),
-        url(./media/amazon-crm.jpg);
+        url(/media/amazon_delivery.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,9 +434,16 @@
     color: #fff;
 }
 
+@media only screen and ( max-width: 768px ){
+    .partners_logo_wrapper{
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+}
+
 .partners_logo_wrapper {
     width: 100%;
-    height: 8.5%;
+    /* height: 8.5%; */
     margin-top: 2.5rem;
     display: flex;
 }
@@ -545,6 +552,7 @@
     .er_content_cards_wrapper {
         flex-direction: column;
         gap: 3rem;
+        width: 100%;
     }
 
     .er_content_wrapper {
@@ -666,7 +674,7 @@
 }
 
 .bfg-main-info-wrapper {
-    width: 60.8%;
+    /* width: 60.8%; */
     max-width: 50.625rem;
     padding-right: 7rem;
     transform: translateX(10%);
@@ -701,6 +709,9 @@
     width: 100%;
     max-width: 31.25rem;
     box-shadow: 0px 30px 45px -30px #32325D40, 0px 18px 36px -18px #0000001A;
+    & img{
+        max-width: 100%;
+    }
 }
 
 .bfg-info-wrapper .atlas-info,
@@ -937,6 +948,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 6rem;
+    margin-top: -500px;
 }
 
 .dfd-info-wrapper {
