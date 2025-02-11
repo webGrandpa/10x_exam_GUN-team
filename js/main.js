@@ -518,4 +518,5 @@
     * Gradient.updateFrequency(freq)
     */
     const gradient = new Gradient();
+
     gradient.initGradient("#gradient-canvas");

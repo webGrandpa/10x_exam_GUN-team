@@ -65,16 +65,17 @@ nav a {
 
 
 .gradient-canvas-wrapper {
+  width: 100%;
   position: absolute;
   transform: skewY(-12deg);
   z-index: -2;
-  --transformOriginX: -60px;
-  transform-origin: var(--transformOriginX) 100%;
+  transform-origin: -60px 100%;
 }
 
 #gradient-canvas {
+  --canvasHeight: 600px;
   width: 100%;
-  height: 600px;
+  height: var(--canvasHeight);
   --gradient-color-1: #a960ee;
   --gradient-color-2: #ff333d;
   --gradient-color-3: #90e0ff;
@@ -166,6 +167,11 @@ nav a {
   row-gap: var(--gridRowGap);
 }
 
+.brand-logo {
+  --userLogoMaxWidth: 160px;
+  /* display: block; */
+}
+
 .section-wrapper {
   position: relative;
   margin: 50px 0;
@@ -239,14 +245,8 @@ a.link-with-arrow:not(:last-child) {
 }
 
 #bottom-menu, #bottom-mobile-menu {
- /*  display: grid;
-  --footerLinksColumnCount: 4;
-  grid-template-columns: repeat(var(--footerLinksColumnCount), 1fr); */
 
-  /* flex-wrap: wrap; */
-  /* max-width: 1080px; */
-  /* margin: 0 auto; */
-  padding: 0 32px;
+  padding: 0 12px;
   margin-top: 80px;
   margin-bottom: 80px;
 
@@ -465,8 +465,17 @@ header#mobile-header {
 }
 
 @media only screen and (max-width: 768px) {
-  header#header {
+  
+  #gradient-canvas {
+    --canvasHeight: 400px;
+  }
+
+  header#main-header {
     display: none;
+  }
+
+  #hero-section__left h1 {
+    font-size: 3rem;
   }
 
   header#mobile-header {
@@ -474,10 +483,13 @@ header#mobile-header {
     justify-content: space-between;
   }
 
+  
 }
 
 @media only screen and (max-width: 599px) {
-  
+  .brand-logo {
+    max-width: var(--userLogoMaxWidth);
+  }
   #bottom-mobile-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -504,7 +516,7 @@ header#mobile-header {
   
 
   .section-content {
-    padding: 30px;
+    padding: 20px;
     width: 100%;
   }
 
