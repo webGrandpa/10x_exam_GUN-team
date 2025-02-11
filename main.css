@@ -9,16 +9,15 @@
 
 
 #global-scale {
-    width: calc(100vw + 200px);
-    max-width: 1930px;
-    height: 69.5rem;
+    width: 100%;
+    height: auto;
     background-color: #0A2540;
     background-image: url(./media/image.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-  
+
 }
 
 .global-scale-wrapper {
@@ -473,8 +472,8 @@
 
 /*  section designed for developers */
 #designed-for-developers {
-    position: absolute;
-    top: 4250px;
+    /* position: absolute;
+    top: 7250px; */
     width: 100%;
     height: 81.875rem;
     clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
