@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stripe</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="/middle_part1.css">
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/css/middle_part1.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/on_footer.css">
   <script type="module" src="js/main.js" defer></script>
 </head>
 
@@ -253,11 +254,11 @@
   </div>
 
 
-  <div class="div middle-part">
+  <section class="div middle-part">
     <!--================================================================
     ========================[left column]===============================
     =================================================================-->
-    <section class="text-column">
+    <div class="text-column">
       <div class="text-wrapper-top">
         <div class="sector1-logo">
           <h4>Modular solutions</h4>
@@ -375,13 +376,13 @@
           <a href="#">Connect</a> for powering platform payments
         </p>
       </div>
-    </section>
+    </div>
 
     <!--================================================================
           ========================[left column]===============================
           =================================================================-->
 
-    <section class="forms">
+    <div class="forms-wrapper">
       <div class="container">
         <div class="slider">
           <div class="visa-card card-1-assembled">
@@ -607,10 +608,10 @@
           </div>
         </div>
       </div>
-      <!-- <div class="free-space1"></div>
-          <div class="free-space2"></div> -->
-    </section>
-  </div>
+      <div class="free-space1"></div>
+          <div class="free-space2"></div>
+    </div>
+  </section>
   <!-- ==========middle part finish============ -->
   <section id="global-scale">
     <div class="global-scale-wrapper">
@@ -872,8 +873,68 @@
       </div>
     </div>
   </section>
+  <!-- ======ushos part finish========== -->
 
-  <!--======= ninelis part finish========= -->
+  <container class="on-footer-content-wrapper">
+    <div class="on-footer-text-wrapper">
+        <div class="on-footer-logo"><h4>Launch with ease</h4></div>
+        <h2 class="on-footer-h2">
+            Low- and no-code options for
+            <br>getting started</h2>
+        <p class="on-footer-p">If you’d like to use Stripe for your business but don’t have developers on staff, no
+            <br>problem. We have a few options depending on your needs.</p>
+    </div>
+    <div class="on-column-wrapper">
+            <div class="on-column1">
+                <div class="on-column1-header">
+                    <img src="/assets/column1.svg" alt="header image">
+                </div>
+                <h3 class="footerh3">
+                    Use a pre-integrated
+                    <br>platform
+                </h3>
+                    <p class="footer-pp">
+                        Explore our directory to find out-of-
+                        <br>the-box solutions that connect with
+                        <br>Stripe, such as <a href="">Squarespace</a> and
+                        <br><a href="#">Lightspeed</a>.
+                    </p>
+            </div>
+            <div class="on-column2">
+                <div class="on-column2-header">
+                    <img src="/assets/column2.svg" alt="header image">
+                </div>
+                <h3 class="footerh3">
+                    Build with Stripe-
+                    <br>certified experts
+                </h3>
+                    <p class="footer-pp">
+                        Work with a Stripe consulting
+                        <br>partner that can integrate and
+                        <br>deploy Stripe solutions for you.
+                    </p>
+            </div>
+            <div class="on-column3">
+                <div class="on-column3-header">
+                    <img src="/assets/column3.svg" alt="header image">
+                </div>
+                <h3 class="footerh3">
+                    Try our no-code
+                    <br>products
+                </h3>
+                    <p class="footer-pp">
+                        <a href="#">Create an invoice</a>, accept  in 
+                        <br><a href="#">person payment</a> directly
+                        or share a <a href="">payment link</a> directly
+                        from your Dashboard to start
+                        generating revenue in minutes—no
+                        code required.
+                    </p>
+        </div>
+    </div>
+</container>
+
+  <!--======= ninelis footer part start========= -->
   <div class="section-divider">
     <div>
       <div class="d-flex">
@@ -1199,7 +1260,7 @@
       <div id="bottom-bar" class="section-content">© 2025 Stripe, Inc.</div>
     </div>
   </footer>
-  <script src="/middle_part1.js"></script>
+  <script src="/js/middle_part1.js"></script>
 </body>
 
 </html>
