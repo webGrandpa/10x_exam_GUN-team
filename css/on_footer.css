@@ -1,9 +1,16 @@
-@media( max-width: 768px ){
+@media only screen and ( max-width: 768px ){
     .advertisment-item{
-        width: 100% !important;
+        width: 70% !important;
+    }
+    .on-column-header >img{
+        width: 100%;
     }
 }
-
+@media only screen and ( max-width: 1024px ) and ( max-width: 768px ){
+    .on-column-header >img{
+        width: 320pxgi;
+    }
+}
 .on-footer-text-wrapper{
     /* margin-left: 230px; */
 }

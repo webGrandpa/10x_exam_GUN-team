@@ -1002,6 +1002,32 @@
     transform: scale(1.1);
 }
 
+.dfd-coding-presentation {
+    width: 50%;
+    height: 30.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.front-end-info {
+    width: 100%;
+    height: 15.5625rem;
+    background: #0C2E4E url(/media/front-end-info.svg);
+}
+
+.server-info {
+    width: 100%;
+    height: 1.5rem;
+    background: url(/media/server-info.svg);
+}
+
+.back-end-info {
+    width: 100%;
+    height: 13.0625rem;
+    background: #06182C url(/media/back-end-info.svg);
+    background-repeat: no-repeat;
+}
+
 .dfd-explanation-wrapper {
     width: 100%;
     height: 15%;
@@ -1139,6 +1165,33 @@
     .dfd-explanation-wrapper .dfd-explanation {
         width: 48%;
     }
+    .dfd-coding-presentation {
+        width: 100%;
+        height: 30.625rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .front-end-info {
+        width: 100%;
+        height: 15.5625rem;
+        background: #0C2E4E url(/media/front-end-info.svg);
+        background-repeat: no-repeat;
+    }
+
+    .server-info {
+        width: 100%;
+        height: 1.5rem;
+        background: url(/media/server-info.svg);
+        background-repeat: no-repeat;
+    }
+
+    .back-end-info {
+        width: 100%;
+        height: 13.0625rem;
+        background: #06182C url(/media/back-end-info.svg);
+        background-repeat: no-repeat;
+    }
 }
 @media (max-width: 768px) {
     .dfd-wrapper {
@@ -1175,6 +1228,33 @@
 
     .dfd-explanation-wrapper .dfd-explanation {
         width: 100%;
+    }
+    .dfd-coding-presentation {
+        width: 100%;
+        height: 30.625rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .front-end-info {
+        width: 100%;
+        height: 15.5625rem;
+        background: #0C2E4E url(/media/front-end-info.svg);
+        background-repeat: no-repeat;
+    }
+
+    .server-info {
+        width: 100%;
+        height: 1.5rem;
+        background: url(/media/server-info.svg);
+        background-repeat: no-repeat;
+    }
+
+    .back-end-info {
+        width: 100%;
+        height: 13.0625rem;
+        background: #06182C url(/media/back-end-info.svg);
+        background-repeat: no-repeat;
     }
 }
 
