@@ -27,6 +27,11 @@
          }
     }
 
+    .payment-container{
+        margin-left: 0px !important;
+
+    }
+
     .on-column-header-img{
         width: 230px !important;
     }
@@ -973,7 +978,7 @@ form {
 
 .payment-container {
     position: relative;
-    width: 331px;
+    max-width: 331px;
     height: 516.74px;
     border: 1.19px solid #C4CCD8;
     background: radial-gradient(#00000000, #cbd6e036);
@@ -986,7 +991,7 @@ form {
 .payment-sms1 {
     position: relative;
     overflow: hidden;
-    width: 290.52px;
+    max-width: 290.52px;
     height: 73.82px;
     left: 21px;
     top: 17px;
@@ -997,7 +1002,7 @@ form {
 }
 
 .back-payment-sms {
-    width: 261.47px;
+    max-width: 261.47px;
     position: absolute;
     height: 66.44px;
     top: 31px;
