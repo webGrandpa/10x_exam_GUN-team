@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stripe</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="/css/middle_part1.css">
+  <link rel="stylesheet" href="/css/middle_part.css">
   <link rel="stylesheet" href="/css/ma1n.css">
   <link rel="stylesheet" href="/css/on_footer.css">
   <link rel="stylesheet" href="/css/on_footer1.css">
@@ -260,7 +260,7 @@
     ========================[left column]===============================
     =================================================================-->
     <div class="text-column">
-      <div class="text-wrapper-top">
+      <div>
         <div class="sector1-logo">
           <h4>Modular solutions</h4>
         </div>
@@ -284,10 +284,11 @@
         <h2 class="sector-h2">
           Accept and optimize
           payments, globally</h2>
-        <p class="sector-p">Increase authorization rates, optimize your checkout
+        <p>Increase authorization rates, optimize your checkout
           conversion, and offer local payment methods in every
           market.</p>
         <button class="sector-btn">Start with Payments
+          <div class="line-arrow"></div>
           <img src="/assets/sector2arrow.svg" class="sector-arrow" alt="arrow">
         </button>
         <h3 class="sector-links-header">See also</h3>
@@ -312,6 +313,7 @@
         <p class="sector-p">Support recurring business models, minimize churn,
           and automate finance operations.</p>
         <button class="sector-btn">Start with Billing
+          <div class="line-arrow"></div>
           <img src="/assets/sector2arrow.svg" class="sector-arrow" alt="arrow">
         </button>
         <h3 class="sector-links-header">See also</h3>
@@ -337,6 +339,7 @@
         <p class="sector-p">Integrate payments into your platform or marketplace
           for end-to-end payments experiences.</p>
         <button class="sector-btn">Start with Connect
+          <div class="line-arrow"></div>
           <img src="/assets/sector2arrow.svg" class="sector-arrow" alt="arrow">
         </button>
         <h3 class="sector-links-header">See also</h3>
@@ -364,6 +367,7 @@
         <p class="sector-p">Launch, manage, and scale a commercial card program
           without any setup fees.</p>
         <button class="sector-btn">Start with Issuing
+          <div class="line-arrow"></div>
           <img src="/assets/sector2arrow.svg" class="sector-arrow" alt="arrow">
         </button>
         <h3 class="sector-links-header">See also</h3>
@@ -426,25 +430,25 @@
       <!--==================== form ======================-->
       <div class="form-container">
         <div class="product-info">
-          <div class="product-img">
-            <img src="/assets/chair.jpg.svg" alt="Wood Chair">
-          </div>
-          <div class="product-name">Wood Chair 001</div>
-          <div class="product-price">$149</div>
+          <img src="/assets/chair.jpg.svg" alt="Wooden Chair">
+          <span>Wood Chair 001</span>
+          <span>$149</span>
         </div>
         <div class="pay-btn">
-          <div class="pay-button1 pay-button"><img src="/assets/apple_pay.svg" alt="apple pay"></div>
-          <div class="pay-button2 pay-button">
+          <button>
+            <img src="/assets/apple_pay.svg" alt="apple pay">
+          </button>
+          <button>
             <img src="/assets/link.svg" alt="link-logo">
             <div class="link-separator"></div>
             <span>Pay faster</span>
             <img src="/assets/link_lock.svg" alt="secure logo">
-          </div>
+          </button>
         </div>
         <div class="pay-stick">
-          <hr class="left-hr sector-hr">
+          <hr>
           Or pay another way
-          <hr class="right-hr sector-hr">
+          <hr>
         </div>
         <form>
           <div class="form-group">
@@ -452,10 +456,10 @@
             <input type="email" id="email" name="email" placeholder="jane.diaz@example.com">
           </div>
           <div class="form-group">
-            <label for="card-number">Card information</label>
+            <label>Card information</label>
             <div class="card-details">
               <input type="text" id="card-number" name="card-number" placeholder="4242 4242 4242 4242">
-              <span class="visa-icon">visa</span>
+              <span>visa</span>
             </div>
           </div>
           <div class="form-group card-row">
@@ -483,134 +487,132 @@
       <div class="subscribe-cont-wrapper">
         <div class="subscribe-navigation">
           <div class="logo-text-holder">
-            <div class="logo-lego">
-              <img src="/assets/logo_ball.svg" alt="logo">
-              <img src="/assets/logo_donut.svg" class="circle-logo" alt="circle">
-              <img src="/assets/logo_stick.svg" class="stick-logo" alt="stick">
-              <img src="/assets/dot.svg" class="dot-logo" alt="dot">
-            </div>
+            <img src="/assets/logo_ball.svg" alt="logo">
+            <img src="/assets/logo_donut.svg" alt="circle">
+            <img src="/assets/logo_stick.svg" alt="stick">
+            <img src="/assets/dot.svg" alt="dot">
             <img src="/assets/logo.png" alt="">
             <a href="#">Quantum</a>
           </div>
-          <nav class="subscribe-nav">
-            <div><a href="#">Product</a></div>
-            <div><a href="#">Pricing</a></div>
-            <div><a href="#">Contact</a></div>
-          </nav>
+          <div class="subscribe-nav">
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+          </div>
+      </div>
+      <div class="column-wrapper">
+        <div class="sub-column">
+          <h3>Standart</h3>
+          <span>Up to 5 users</span>
+          <div class="price-per-month">
+            <span>$49</span>
+            <span>/month</span>
+          </div>
+          <button>Subscribe</button>
+          <span>This includes:</span>
+          <div class="includes">
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
+              <span>12 months historical data</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>4 hr data refresh</span>
+            </div>
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"> </div>
+              <span>500+ third party integrations</span>
+            </div>
+          </div>
         </div>
-        <div class="column-wrapper">
-          <div>
-            <div class="column1">
-              <h3 class="column-header-h3">Standart</h3>
-              <span class="users-info">Up to 5 users</span>
-              <div class="price-per-month"><span class="price">$49</span><span class="month">/month</span></div>
-              <div><button class="subscribe-btn">Subscribe</button></div>
-              <span class="users-info-bot">This includes:</span>
-              <div class="includes">
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
-                  <span>12 months historical data</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>4 hr data refresh</span>
-                </div>
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"> </div>
-                  <span>500+ third party integrations</span>
-                </div>
-              </div>
+        <div class="sub-column">
+          <div class="column2-header">
+            <h3>Professional</h3>
+            <div class="popular"></div>
+          </div>
+          <span>Up to 25 users</span>
+          <div class="price-per-month"><span>$149</span>
+            <span>/month</span>
+          </div>
+          <button>Subscribe</button>
+          <span>This includes:</span>
+          <div class="includes">
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
+              <span>24 months historical data</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>1 hr data refresh</span>
+            </div>
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
+              <span>1000+ third party integrations</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>Simple reporting</span>
             </div>
           </div>
-          <div>
-            <div class="column2">
-              <div class="column2-header">
-                <h3 class="column-header-h3">Professional</h3>
-                <div class="popular"></div>
-              </div>
-              <span class="users-info">Up to 25 users</span>
-              <div class="price-per-month"><span class="price">$149</span><span class="month">/month</span></div>
-              <div><button class="subscribe-btn">Subscribe</button></div>
-              <span class="users-info-bot">This includes:</span>
-              <div class="includes">
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
-                  <span>24 months historical data</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>1 hr data refresh</span>
-                </div>
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
-                  <span>1000+ third party integrations</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>Simple reporting</span>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="sub-column">
+          <h3>Enterprise</h3>
+          <span>Unlimited users</span>
+          <div class="price-per-month">
+            <span>$299</span>
+            <span>/month</span>
           </div>
-          <div>
-            <div class="column3">
-              <h3 class="column-header-h3">Enterprise</h3>
-              <span class="users-info">Unlimited users</span>
-              <div class="price-per-month"><span class="price">$299</span><span class="month">/month</span></div>
-              <div><button class="subscribe-btn">Subscribe</button></div>
-              <span class="users-info-bot">This includes:</span>
-              <div class="includes">
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
-                  <span>Unlimited historical data</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>15 min data refresh</span>
-                </div>
-                <div>
-                  <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
-                  <span>2000+ third party integrations</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>Advanced reporting</span>
-                </div>
-                <div>
-                  <img src="/assets/checked.svg" alt="check">
-                  <span>Priority support</span>
-                </div>
-              </div>
+          <button>Subscribe</button>
+          <span>This includes:</span>
+          <div class="includes">
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
+              <span>Unlimited historical data</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>15 min data refresh</span>
+            </div>
+            <div>
+              <div class="absolute-check"><img src="/assets/checked.svg" alt="check"></div>
+              <span>2000+ third party integrations</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>Advanced reporting</span>
+            </div>
+            <div>
+              <img src="/assets/checked.svg" alt="check">
+              <span>Priority support</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
+      <!-- =====payment container===== -->
       <div class="payment-container">
-        <div class="payment-sms1">
-          <div class="sms-info">
-            <div class="sms-num">#9124</div>
-            <div class="name-from">Jacques Muller</div>
-          </div>
-          <div class="processing-border">
-            <div class="processing">Processing</div>
-          </div>
-          <div class="payment-value">$200.00</div>
+        <div>
+            <span>#9124</span>
+            <span>Jacques Muller</span>
+            <div>
+              <span>Processing</span>
+            </div>
+          <span>$200.00</span>
         </div>
         <div class="back-payment-sms"></div>
         <div class="payment-body">
           <div class="body-positions">
-            <div class="buyers in-payment">Buyers</div>
-            <div class="payment-svg"><img src="/assets/arrows1.svg" alt=""></div>
-            <div class="platform in-payment">Platform</div>
-            <div class="payment-svg"><img src="/assets/arrows.svg" alt=""></div>
-            <div class="sellers in-payment">Sellers or service providers</div>
-            <div class="payment145 pay-14545">$145.50</div>
-            <div class="payment45 pay-14545">$4.50</div>
+            <span class="in-payment">Buyers</span>
+            <img src="/assets/arrows1.svg" alt="">
+            <span class="in-payment">Platform</span>
+            <img src="/assets/arrows.svg" alt="">
+            <span class="in-payment">Sellers or service providers</span>
+            <span class="payment-value">$145.50</span>
+            <span class="payment-value">$4.50</span>
           </div>
         </div>
       </div>
-      <!-- <div class="free-space1"></div>
-          <div class="free-space2"></div> -->
+
     </div>
   </section>
   <!-- ==========middle part finish============ -->
