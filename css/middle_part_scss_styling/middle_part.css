@@ -51,18 +51,17 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
-  margin-bottom: 10.375rem;
+  margin-top: 10rem;
   /* margin-left: 12.5rem; */
   padding: 0;
 }
 
 .text-wrapper {
-  margin-top: 15.5938rem;
   height: 100%;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
 }
-
-.sector-h2 {
+.text-wrapper h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 34.88px;
@@ -71,14 +70,13 @@
   color: #0A2540;
   margin-top: 16px;
 }
-
-.sector1h2 {
-  font-size: 51.632px;
+.text-wrapper .sector1h2 {
+  font-size: 58.632px;
   line-height: 68px;
   letter-spacing: -1.12;
+  margin-bottom: 15px;
 }
-
-.sector-p {
+.text-wrapper :nth-child(3), .text-wrapper .sector-p {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 16.59px;
@@ -87,8 +85,10 @@
   color: #425466;
   margin-top: 1.5rem;
 }
-
-.sector-logo {
+.text-wrapper .sector1-logo-item {
+  color: #635BFF;
+}
+.text-wrapper :nth-child(1) {
   gap: 5px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
@@ -96,14 +96,8 @@
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #2E3A55;
-  margin-bottom: 16px;
 }
-
-.sector1-logo h4 {
-  color: #635BFF;
-}
-
-.sector-btn {
+.text-wrapper button {
   position: relative;
   padding: 3px 26.8px 6px 16px;
   background: #635BFF;
@@ -117,31 +111,26 @@
   color: #fff;
   margin-top: 1.6875rem;
 }
-
-.sector-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.01);
+.text-wrapper button:hover {
+  background: #002c59;
+  transform: scale(1.02);
   cursor: pointer;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.169);
 }
-
-.sector-btn:active {
+.text-wrapper button:active {
   transform: scale(0.99);
 }
-
-.sector-arrow {
+.text-wrapper button img {
   position: absolute;
   top: 10px;
   right: 13px;
   border: none;
   transition: 0.2s;
 }
-
-.sector-btn:hover > img {
+.text-wrapper button:hover > img {
   transform: translateX(3px);
 }
-
-.line-arrow {
+.text-wrapper button > div {
   width: 9px;
   height: 1.7px;
   background: #fff;
@@ -151,12 +140,10 @@
   opacity: 0;
   transition: 0.4s ease;
 }
-
-.sector-btn:hover > div {
+.text-wrapper button:hover > div {
   opacity: 1;
 }
-
-.sector-links-header {
+.text-wrapper h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14.18px;
@@ -165,8 +152,7 @@
   color: #0A2540;
   margin-top: 3.5rem;
 }
-
-.sector-links-1 {
+.text-wrapper .sector-links-1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 13.71px;
@@ -175,12 +161,10 @@
   color: #0A2540;
   margin-top: 0.5rem;
 }
-
-.sector-links-1 > a {
+.text-wrapper .sector-links-1 a {
   text-decoration: none;
 }
-
-.sector-links-2 {
+.text-wrapper .sector-links-2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 13.71px;
@@ -189,12 +173,10 @@
   color: #0A2540;
   margin-top: 0.25rem;
 }
-
-.sector-links-2 > a {
+.text-wrapper .sector-links-2 a {
   text-decoration: none;
 }
-
-.sector-links-3 {
+.text-wrapper .sector-links-3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 13.71px;
@@ -203,8 +185,7 @@
   color: #0A2540;
   margin-top: 0.25rem;
 }
-
-.sector-links-3 > a {
+.text-wrapper .sector-links-3 a {
   text-decoration: none;
 }
 
@@ -214,7 +195,7 @@
 /* forms and cards section */
 .forms-wrapper {
   width: 50%;
-  margin-top: 150px;
+  margin-top: 18rem;
 }
 
 .container {
@@ -228,18 +209,16 @@
   border: 1px;
   border-radius: 14px;
   box-shadow: -2px 2px 73px -14px;
+  /* differences of cards */
 }
-
-.slider {
+.container .slider {
   position: relative;
   width: 100%;
   height: 100%;
   border: 1px;
   border-radius: 14px;
 }
-
-/* here's all cards similar properties  */
-.visa-card {
+.container .visa-card {
   width: 349px;
   height: 215.26px;
   border-radius: 14px;
@@ -250,72 +229,19 @@
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
 }
-
-/* here is first card for javascript function */
-.visa-card.active {
+.container .visa-card.active {
   opacity: 1;
   z-index: 1;
 }
-
-/* differences of cards */
-.card-1-assembled {
+.container .card-1-assembled {
   background-color: #000000;
 }
-
-.card-2-assembled {
-  background-color: #27BB86;
-  overflow: hidden;
-}
-
-.card-3-assembled {
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.frame-text {
-  position: absolute;
-  font-family: sans-serif;
-  color: #fff;
-}
-
-/* positioning and styles of cards */
-.card-1-assembled .kavholm {
-  right: 0;
-  margin-right: 23px;
-  margin-top: 27px;
-  letter-spacing: 0.8px;
-  font-size: 18px;
-}
-
-.card-1-assembled .visa-balls {
-  position: absolute;
-  bottom: 16.3px;
-  right: 13.5px;
-}
-
-.card-1-assembled .commercial {
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  bottom: 74px;
-  right: 14px;
-  font-size: 12px;
-}
-
-.card-1-assembled .jane-diaz {
-  font-weight: 500;
-  letter-spacing: 0.1px;
-  bottom: 26px;
-  left: 28px;
-  font-size: 12px;
-}
-
-/* typewriter animation on black card */
-.kavholm::before,
-.kavholm::after,
-.commercial::before,
-.commercial::after,
-.jane-diaz::before,
-.jane-diaz::after {
+.container .card-1-assembled .kavholm::before,
+.container .card-1-assembled .kavholm::after,
+.container .card-1-assembled .commercial::before,
+.container .card-1-assembled .commercial::after,
+.container .card-1-assembled .jane-diaz::before,
+.container .card-1-assembled .jane-diaz::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -323,16 +249,204 @@
   top: 0;
   bottom: 0;
 }
-
-.frame-text::before {
+.container .card-1-assembled .frame-text::before {
   background: #000000;
   animation: typing-text 4s steps(10) infinite;
 }
-
-.frame-text::after {
+.container .card-1-assembled .frame-text::after {
   width: 1px;
   background: white;
   animation: typing-text 4s steps(10) infinite, writing 900ms steps(10) infinite;
+}
+.container .card-1-assembled .kavholm {
+  right: 0;
+  margin-right: 23px;
+  margin-top: 27px;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+}
+.container .card-1-assembled .visa-balls {
+  position: absolute;
+  bottom: 16.3px;
+  right: 13.5px;
+}
+.container .card-1-assembled .commercial {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  bottom: 74px;
+  right: 14px;
+  font-size: 12px;
+}
+.container .card-1-assembled .jane-diaz {
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  bottom: 26px;
+  left: 28px;
+  font-size: 12px;
+}
+.container .card-1-assembled .frame-text {
+  position: absolute;
+  font-family: sans-serif;
+  color: #fff;
+}
+.container .card-2-assembled {
+  background-color: #27BB86;
+  overflow: hidden;
+}
+.container .card-2-assembled .rocket-rides {
+  position: absolute;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 27px;
+}
+.container .card-2-assembled .visa-text {
+  position: absolute;
+  bottom: 16.3px;
+  right: 13.5px;
+}
+.container .card-2-assembled .commercial {
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  bottom: 74px;
+  right: 12px;
+  color: #fff;
+  font-size: 12px;
+}
+.container .card-2-assembled .lucian {
+  position: absolute;
+  font-family: "DM Sans";
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  bottom: 26px;
+  left: 28px;
+  color: #fff;
+  font-size: 12px;
+}
+.container .card-2-assembled .waves-animation {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+.container .card-2-assembled .wave {
+  background: url(/assets/wave.png) repeat-x;
+  position: absolute;
+  width: 64000px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  /* transform: translate3d(0, 0, 0);   */
+  opacity: 1;
+}
+.container .card-2-assembled .wave1 {
+  top: -198px;
+}
+.container .card-2-assembled .wave2 {
+  top: -188px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+  opacity: 1;
+}
+.container .card-2-assembled .wave3 {
+  top: -178px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.25s infinite;
+}
+.container .card-2-assembled .wave4 {
+  top: -168px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.375s infinite;
+}
+.container .card-2-assembled .wave5 {
+  top: -158px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.5s infinite;
+}
+.container .card-2-assembled .wave6 {
+  top: -148px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.625s infinite;
+}
+.container .card-2-assembled .wave7 {
+  top: -138px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.75s infinite;
+}
+.container .card-2-assembled .wave8 {
+  top: -128px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.875s infinite;
+}
+.container .card-2-assembled .wave9 {
+  top: -118px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1s infinite;
+}
+.container .card-2-assembled .wave10 {
+  top: -108px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1.125s infinite;
+}
+.container .card-2-assembled .wave11 {
+  top: -100px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1.25s infinite;
+  opacity: 1;
+}
+.container .card-3-assembled {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.container .card-3-assembled .powdur {
+  position: absolute;
+  right: 0;
+  margin-right: 28px;
+  margin-top: 27px;
+}
+.container .card-3-assembled .visa-text-black {
+  position: absolute;
+  bottom: 16.3px;
+  right: 13.5px;
+}
+.container .card-3-assembled .namara {
+  position: absolute;
+  font-family: "DM Sans";
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  bottom: 26px;
+  left: 28px;
+  color: #000000;
+  font-size: 12px;
+}
+.container .card-3-assembled .ball {
+  overflow: hidden;
+  position: absolute;
+  top: -29px;
+  left: -29px;
+  border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
+  background-color: rgba(147, 208, 178, 0.6862745098);
+  background-size: cover;
+  background-position: center;
+  animation: morph 2.75s linear infinite;
+}
+.container .card-3-assembled .ball-1 {
+  top: -29px;
+  left: -29px;
+  width: 165px;
+  height: 175px;
+}
+.container .card-3-assembled .ball-2 {
+  top: 10px;
+  left: 311px;
+  height: 150px;
+  width: 150px;
+  animation-delay: 0.5s;
+}
+.container .card-3-assembled .ball-3 {
+  top: 181px;
+  left: 139px;
+  height: 80px;
+  width: 80px;
+  animation-delay: 1.5s;
+}
+.container .card-3-assembled .ball-4 {
+  top: 27px;
+  left: 106px;
+  width: 90px;
+  height: 100px;
+  animation-delay: 2s;
 }
 
 @keyframes typing-text {
@@ -348,141 +462,6 @@
     background: transparent;
   }
 }
-/* styles and pisitions of green card */
-.card-2-assembled .rocket-rides {
-  position: absolute;
-  right: 0;
-  margin-right: 28px;
-  margin-top: 27px;
-}
-
-.card-2-assembled .visa-text {
-  position: absolute;
-  bottom: 16.3px;
-  right: 13.5px;
-}
-
-.card-2-assembled .commercial {
-  position: absolute;
-  font-family: sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  bottom: 74px;
-  right: 12px;
-  color: #fff;
-  font-size: 12px;
-}
-
-.card-2-assembled .lucian {
-  position: absolute;
-  font-family: "DM Sans";
-  font-weight: 500;
-  letter-spacing: 0.1px;
-  bottom: 26px;
-  left: 28px;
-  color: #fff;
-  font-size: 12px;
-}
-
-.card-3-assembled .powdur {
-  position: absolute;
-  right: 0;
-  margin-right: 28px;
-  margin-top: 27px;
-}
-
-.card-3-assembled .visa-text-black {
-  position: absolute;
-  bottom: 16.3px;
-  right: 13.5px;
-}
-
-.card-3-assembled .namara {
-  position: absolute;
-  font-family: "DM Sans";
-  font-weight: 500;
-  letter-spacing: 0.1px;
-  bottom: 26px;
-  left: 28px;
-  color: #000000;
-  font-size: 12px;
-}
-
-/* waves animation of green card */
-.waves-animation {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-}
-
-.wave {
-  background: url(/assets/wave.png) repeat-x;
-  position: absolute;
-  width: 64000px;
-  height: 198px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  /* transform: translate3d(0, 0, 0);   */
-  opacity: 1;
-}
-
-.wave1 {
-  top: -198px;
-}
-
-.wave2 {
-  top: -188px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
-  opacity: 1;
-}
-
-.wave3 {
-  top: -178px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.25s infinite;
-}
-
-.wave4 {
-  top: -168px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.375s infinite;
-}
-
-.wave5 {
-  top: -158px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.5s infinite;
-}
-
-.wave6 {
-  top: -148px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.625s infinite;
-}
-
-.wave7 {
-  top: -138px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.75s infinite;
-}
-
-.wave8 {
-  top: -128px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.875s infinite;
-}
-
-.wave9 {
-  top: -118px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1s infinite;
-}
-
-.wave10 {
-  top: -108px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1.125s infinite;
-}
-
-.wave11 {
-  top: -100px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1.25s infinite;
-  opacity: 1;
-}
-
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -491,50 +470,6 @@
     margin-left: -1400px;
   }
 }
-/* ball morphismg animations of white card */
-.ball {
-  overflow: hidden;
-  position: absolute;
-  top: -29px;
-  left: -29px;
-  border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
-  background-color: rgba(147, 208, 178, 0.6862745098);
-  background-size: cover;
-  background-position: center;
-  animation: morph 2.75s linear infinite;
-}
-
-.ball-1 {
-  top: -29px;
-  left: -29px;
-  width: 165px;
-  height: 175px;
-}
-
-.ball-2 {
-  top: 10px;
-  left: 311px;
-  height: 150px;
-  width: 150px;
-  animation-delay: 0.5s;
-}
-
-.ball-3 {
-  top: 181px;
-  left: 139px;
-  height: 80px;
-  width: 80px;
-  animation-delay: 1.5s;
-}
-
-.ball-4 {
-  top: 27px;
-  left: 106px;
-  width: 90px;
-  height: 100px;
-  animation-delay: 2s;
-}
-
 @keyframes morph {
   0%, 100% {
     border-radius: 42% 56% 72% 28%/42% 42% 56% 48%;
@@ -563,7 +498,7 @@
   background: #fff;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 300px;
+  margin-top: 600px;
   margin-left: 65px;
 }
 .form-container .product-info {
@@ -751,7 +686,7 @@
   max-width: 438px;
   max-height: 342.53px;
   box-shadow: 0px 24.33px 48.67px -24.33px;
-  margin-top: 12.5rem;
+  margin-top: 17.5rem;
   margin-left: 0.9375rem;
   border: 0.0625rem;
   border-radius: 0.25rem;
@@ -935,7 +870,7 @@
   background: radial-gradient(rgba(0, 0, 0, 0), rgba(203, 214, 224, 0.2117647059));
   background-color: #fff;
   border-radius: 9.53px;
-  margin-top: 300px;
+  margin-top: 25rem;
   margin-left: 55px;
 }
 .payment-container > :first-child {
