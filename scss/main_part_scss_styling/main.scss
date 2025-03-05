@@ -292,7 +292,7 @@ $primaryBackground: #0a2540;
   h2,
   p {
     @include paddingCenter(1rem, 2rem);
-     @include fontStyle;
+    @include fontStyle;
   }
 }
 
@@ -358,24 +358,23 @@ $primaryBackground: #0a2540;
 .er_content_container {
   p {
     @include paddingCenter(1rem, 1.25rem);
-     @include secondaryFontStyle(0.8644rem, 1.5rem, 0.0125rem, #425466);
+    @include secondaryFontStyle(0.8644rem, 1.5rem, 0.0125rem, #425466);
   }
   &:last-child {
     span {
       font-size: 0.8719rem;
       line-height: 1.5rem;
       letter-spacing: 0.0125rem;
-      @include secondaryFontStyle(0.8719rem, 1.5rem, 0.0125rem, #0A2540);
-     @include paddingCenter(1rem, 2rem);
+      @include secondaryFontStyle(0.8719rem, 1.5rem, 0.0125rem, #0a2540);
+      @include paddingCenter(1rem, 2rem);
     }
   }
 }
 
-
 .er_icon_wrapper {
   margin-top: 0.5rem;
   padding: 1rem 1rem 0 1rem;
-@include flexColumn;
+  @include flexColumn;
   gap: 0.75rem;
 }
 
