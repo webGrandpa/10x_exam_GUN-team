@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stripe</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="/css/middle_part_scss_styling/middle_part.css">
-  <link rel="stylesheet" href="/css/main_part_scss_styling/main.css">
-  <link rel="stylesheet" href="/css/before_footer_scss_styling/before_footer.css">
+  <link rel="stylesheet" href="/scss/middle_part_scss_styling/middle_part.css">
+  <link rel="stylesheet" href="/scss/main_part_scss_styling/main.css">
+  <link rel="stylesheet" href="/scss/before_footer_scss_styling/before_footer.css">
   <script type="module" src="js/main.js" defer></script>
   <script src="/js/middle_part1.js" defer></script>
 </head>
@@ -291,13 +291,13 @@
           <img src="/assets/sector2arrow.svg"  alt="arrow">
         </button>
         <h3>See also</h3>
-        <p class="sector-links-1">
+        <p class="sector-links">
           <a href="#">Tax</a> for automating sales tax and VAT
         </p>
-        <p class="sector-links-2">
+        <p class="sector-links">
           <a href="#">Radar</a> for fraud prevention and management
         </p>
-        <p class="sector-links-3">
+        <p class="sector-links">
           <a href="#">Terminal</a> for custom in-person payments
         </p>
       </div>
@@ -316,13 +316,13 @@
           <img src="/assets/sector2arrow.svg"  alt="arrow">
         </button>
         <h3>See also</h3>
-        <p class="sector-links-1">
+        <p class="sector-links">
           <a href="#">Invoicing</a> for invoice creation, collection, and tracking
         </p>
-        <p class="sector-links-2">
+        <p class="sector-links">
           <a href="#">Revenue Recognition</a> for streamlined accrual accounting
         </p>
-        <p class="sector-links-3">
+        <p class="sector-links">
           <a href="#">Sigma</a> for custom revenue reports
         </p>
       </div>
@@ -342,13 +342,13 @@
           <img src="/assets/sector2arrow.svg"  alt="arrow">
         </button>
         <h3>See also</h3>
-        <p class="sector-links-1">
+        <p class="sector-links">
           <a href="#">Terminal</a> for custom in-person payments
         </p>
-        <p class="sector-links-2">
+        <p class="sector-links">
           <a href="#">Instant Payouts</a> for fast payments to users
         </p>
-        <p class="sector-links-3">
+        <p class="sector-links">
           <a href="#">Payment Elements</a> for customizable UIs
         </p>
       </div>
@@ -370,21 +370,21 @@
           <img src="/assets/sector2arrow.svg"  alt="arrow">
         </button>
         <h3>See also</h3>
-        <p class="sector-links-1">
+        <p class="sector-links">
           <a href="#">Treasury</a> for financial accounts
         </p>
-        <p class="sector-links-2">
+        <p class="sector-links">
           <a href="#">Capital</a> for offering fast, flexible financing
         </p>
-        <p class="sector-links-3">
+        <p class="sector-links">
           <a href="#">Connect</a> for powering platform payments
         </p>
       </div>
     </div>
 
     <!--================================================================
-          ========================[left column]===============================
-          =================================================================-->
+    ========================[left column]===============================
+    =================================================================-->
 
     <div class="forms-wrapper">
       <div class="container">
@@ -918,47 +918,65 @@
         <div>
           <img src="/assets/column1.svg" alt="header image">
         </div>
-        <h3>
-          Use a pre-integrated
-          <br>platform
-        </h3>
-        <p>
-          Explore our directory to find out-of-
-          <br>the-box solutions that connect with
-          <br>Stripe, such as <a href="">Squarespace</a> and
-          <br><a href="#">Lightspeed</a>.
-        </p>
+        <div class="hover-effect">
+          <h3>
+            Use a pre-integrated
+            <br>platform
+          </h3>
+          <p>
+            Explore our directory to find out-of-
+            <br>the-box solutions that connect with
+            <br>Stripe, such as <a href="">Squarespace</a> and
+            <br><a href="#">Lightspeed</a>.
+          </p>
+        </div>
+        <div>
+          <a href="#">See directory</a>
+          <img src="/assets/2columns_payment_arrow.svg" alt="">
+        </div>
       </div>
       <div>
         <div>
           <img src="/assets/column2.svg" class="on-column-header-img" alt="header image">
         </div>
-        <h3>
-          Build with Stripe-
-          <br>certified experts
-        </h3>
-        <p>
-          Work with a Stripe consulting
-          <br>partner that can integrate and
-          <br>deploy Stripe solutions for you.
-        </p>
+        <div class="hover-effect">
+          <h3>
+            Build with Stripe-
+            <br>certified experts
+          </h3>
+          <p>
+            Work with a Stripe consulting
+            <br>partner that can integrate and
+            <br>deploy Stripe solutions for you.
+          </p>
+        </div>
+        <div>
+          <a href="#">See directory</a>
+          <img src="/assets/2columns_payment_arrow.svg" alt="">
+        </div>
       </div>
       <div>
         <div>
           <img src="/assets/column3.svg" class="on-column-header-img"alt="header image">
         </div>
-        <h3>
-          Try our no-code
-          <br>products
-        </h3>
-        <p>
-          <a href="#">Create an invoice</a>, accept in
-          <br><a href="#">person payment</a> directly
-          or share a <a href="">payment link</a> directly
-          from your Dashboard to start
-          generating revenue in minutes—no
-          code required.
-        </p>
+        <div class="hover-effect">
+          <h3>
+            Try our no-code
+            <br>products
+          </h3>
+          <p>
+            <a href="#">Create an invoice</a>, accept in
+            <br><a href="#">person payment</a> directly
+            or share a <a href="">payment link</a> directly
+            from your Dashboard to start
+            generating revenue in minutes—no
+            code required.
+          </p>
+        </div>
+        <div>
+          <a href="#">See directory</a>
+          <img src="/assets/2columns_payment_arrow.svg" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -978,7 +996,7 @@
           <div></div>
         </button>
         <div class="link-to-btn">
-          <a href="#">contact <br>sales</a>
+          <a href="#">contact sales</a>
           <img src="/assets/2columns_payment_arrow.svg" alt="arrow">
           <div></div>
         </div>

@@ -1,72 +1,34 @@
-@media only screen and (max-width: 768px){
-    .middle-part{
-        flex-direction: column !important;
-        gap: unset;
-    }
-    .text-column, .forms-wrapper{
-        width: 100% !important;
-    }
-    .on-column-wrapper{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        gap: 10px;
-
-    }
-    
-
+@mixin reg_fonts($color, $font_size, $font_weight, $line_height, $letter_spacing){
+    color: $color;
+    font-family: 'DM Sans', sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    line-height: $line_height;
+    letter-spacing: $letter_spacing;
 }
 
-@media only screen and (max-width: 390px){
-    .subscribe-cont-wrapper{
-        margin-left: -20px;
-        width: 300px;
-         & .subscribe-navigation{
-            width: 300px;
-         }
-    }
-
-    .payment-container{
-        margin-left: 0px !important;
-
-    }
-
-    .on-column-header-img{
-        width: 230px !important;
-    }
+@mixin display_properties($display, $justify-content, $align-items, $flex-direction){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
 }
-
-@media( max-width: 379px ) {
-    .text-column {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 10px;
-    }
-}
-
-
 
 /* ///////////////////////////////////////// */
-/* ===============[Left column]============= */
+/*             @@ [Left column]              */
 /* ///////////////////////////////////////// */
-
 
 .middle-part {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @include display_properties(flex, space-between, -items, -direction);
     padding: 20px;
-    gap: 40px;
+    gap: 85px;
 }
 
 .text-column {
     width: 50%;
-    display: flex;
-    flex-direction: column;
+    @include display_properties(flex, -content, -items, column);
     margin-top: 10rem;
-    // margin-bottom: 10.375rem;
-    /* margin-left: 12.5rem; */
     padding: 0;
 }
 
@@ -76,29 +38,17 @@
     margin-bottom: 5rem;
 
     h2 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 34.88px;
-        line-height: 48px;
-        letter-spacing: -0.2px;
-        color: #0A2540;
-        margin-top: 16px;
+        @include reg_fonts(#0A2540, 2.18rem, 700, 3rem, -0.0125rem);
+        margin-top: 1rem;
     }
     
     .sector1h2 {
-        font-size: 58.632px;
-        line-height: 68px;
-        letter-spacing: -1.12;
+        @include reg_fonts(#0A2540, 3.6645rem,700, 4.25rem, -0.07rem);
         margin-bottom: 15px;
     }
     
     :nth-child(3), .sector-p {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 16.59px;
-        line-height: 28px;
-        letter-spacing: 0.2px;
-        color: #425466;
+        @include reg_fonts(#425466, 1.0369rem, 700, 1.75rem, 0.0125rem);
         margin-top: 1.5rem;
     }
 
@@ -107,13 +57,8 @@
     }
     
     :nth-child(1){
+        @include reg_fonts(#2E3A55, 1.055rem, 500, 1.75rem, 0.0125rem);
         gap: 5px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 500;
-        font-size: 16.88px;
-        line-height: 28px;
-        letter-spacing: 0.2px;
-        color: #2E3A55;
     }
     
     button {
@@ -122,12 +67,7 @@
         background: #635BFF;
         border: 1px;
         border-radius: 16.5px;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 500;
-        font-size: 13, 48px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #fff;
+        @include reg_fonts(#fff, 0.8425rem, 500, 1.5rem, 0.0125rem);
         margin-top: 1.6875rem;
 
         &:hover{
@@ -172,74 +112,32 @@
     }
    
     h3 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 14.18px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #0A2540;
+        @include reg_fonts(#0A2540, 0.8862rem, 700, 1.5rem, 0.0125rem);
         margin-top: 3.5rem;
     }
     
-    .sector-links-1 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 500;
-        font-size: 13.71px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #0A2540;
+    .sector-links {
+        @include reg_fonts(#425466, 0.8569rem, 500, 1.5rem, 0.0125rem);
         margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
 
         a {
             text-decoration: none;
-        }
-    }
-
-    .sector-links-2 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 13.71px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #0A2540;
-        margin-top: 0.25rem;
-
-        a {
-            text-decoration: none;
-        }
-    }
-
-    .sector-links-3 {
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 500;
-        font-size: 13.71px;
-        line-height: 24px;
-        letter-spacing: 0.2px;
-        color: #0A2540;
-        margin-top: 0.25rem;
-
-        a {
-            text-decoration: none;
+            color:#635BFF;
         }
     }
 }
 
-
-
-
 /* ///////////////////////////////////////// */
-/* ============[Right column]=============== */
+/*             [Right column]                */
 /* ///////////////////////////////////////// */
 
-/* forms and cards section */
-
-
+/*  @@ forms and cards section */
 
 .forms-wrapper{
     width: 50%;
     margin-top: 18rem;
 }
-
 
 .container{
     width: 349px;
@@ -278,7 +176,7 @@
         z-index: 1;
     }
     
-    /* differences of cards */
+    /* @@ differences of cards */
     .card-1-assembled {
         background-color: #000000;
         .kavholm::before,
@@ -362,27 +260,18 @@
             right: 13.5px;
         }
 
-
         .commercial {
+            @include reg_fonts(#FFF, 0.75rem, 700, none, 0.025rem);
             position: absolute;
-            font-family: sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.4px;
             bottom: 74px;
             right: 12px;
-            color: #fff;
-            font-size: 12px;
         }
 
         .lucian {
+            @include reg_fonts(#FFF, 0.75rem, 500, none, 0.0063rem);
             position: absolute;
-            font-family: 'DM Sans';
-            font-weight: 500;
-            letter-spacing: 0.1px;
             bottom: 26px;
             left: 28px;
-            color: #fff;
-            font-size: 12px;
         }
 
         .waves-animation {
@@ -478,14 +367,10 @@
         }
 
         .namara {
+            @include reg_fonts(#000000, 0.75rem, 500, none, 0.0063rem);
             position: absolute;
-            font-family: 'DM Sans';
-            font-weight: 500;
-            letter-spacing: 0.1px;
             bottom: 26px;
             left: 28px;
-            color: #000000;
-            font-size: 12px;
         }
 
         .ball {
@@ -535,8 +420,6 @@
 
 }
 
-
-
 @keyframes typing-text{  
     to{  
         left: 100%;  
@@ -578,15 +461,9 @@
     }
 }
 
-@media (max-width: 379px) {  
-    .container {
-        position: relative;
-        top: 700px;
-        left: -360px;
-    }  
-  }
 
-/* ============== form ============== */
+
+/*          @@ form            */
 
 .form-container {
     position: relative;
@@ -601,9 +478,7 @@
     margin-left: 65px;
 
     .product-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display_properties(flex, -content, center, column);
         margin-top: 5px;
 
         > img {
@@ -630,22 +505,18 @@
     }
     
     .pay-btn {
-        display: flex;
-        flex-direction: column;
+        @include display_properties(flex, -content, -items, column);
         gap: 6px;
         margin: 8px 0;
 
         > button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display_properties(flex, center, center, -direction);
             width: 100%;
             border-radius: 6px;
             height: 25px;
             font-weight: 600;
             font-size: 11px;
             border: none;
-            
         }
 
         > button:hover{
@@ -676,9 +547,7 @@
     }
  
     .pay-stick {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display_properties(flex, center, center, -direction);
         color: #727F96;
         font-size: 9px;
         white-space: nowrap;
@@ -700,29 +569,24 @@
     
     form {
         padding: 0 10px;
-        display: flex;
-        flex-direction: column;
+        @include display_properties(flex, -content, -items, column);
         gap: 8px;
         margin-bottom: 10px;
 
         .form-group {
-            display: flex;
-            flex-direction: column;
+            @include display_properties(flex, -content, -items, column);
             text-align: left;
 
             label {
-                font-size: 10px;
+                @include reg_fonts(#4a5568, 10px, 500, 0, 0);
                 margin-bottom: 2px;
-                color: #4a5568;
-                font-weight: 500;
             }
 
             input,select {
+                @include reg_fonts(#2d3748, 11px, 400, 0, 0);
                 padding: 5px;
                 border: 1px solid #e0e0e0;
                 border-radius: 6px;
-                font-size: 11px;
-                color: #2d3748;
                 outline: none;
                 height: 23.39px;
                 margin-bottom: 5px;
@@ -742,10 +606,9 @@
         }
 
         .card-details {
-            display: flex;
+            @include display_properties(flex, -content, center, -direction);
             gap: 6px;
             position: relative;
-            align-items: center;
 
             > input {
                 flex: 1;
@@ -765,9 +628,7 @@
     }
     
     .card-row {
-        display: flex;
-        align-items: center;
-        flex-direction: row !important;
+        @include display_properties(flex, -content, center, row !important);
         gap: 6px;
 
         > input:first-child {
@@ -813,9 +674,7 @@
     cursor: pointer;
 }
 
-
-
-/* ==subscribe-form== */
+/*     @@ subscribe-form       */
 
 .subscribe-cont-wrapper {
     max-width: 438px;
@@ -831,9 +690,7 @@
       .subscribe-navigation {
         max-width: 438px;
         height: 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include display_properties(flex, space-between, center, -direction);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
 
         .logo-text-holder {
@@ -843,11 +700,7 @@
             display: flex;
             gap: 0.355rem;
             margin-left: 1.4194rem;
-            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-            font-weight: 500;
-            font-size: 0.6025rem;
-            line-height: 1.0644rem;
-            color: #3F4B66;
+            @include reg_fonts(#3f4b66, 0.6025rem, 500, 1.0644rem, 0);
     
             a {
                 text-decoration: none;
@@ -877,10 +730,7 @@
             display: flex;
             gap: 0.8619rem;
             margin-right: 1.4194rem;
-            font-family: "Inter", sans-serif;
-            font-weight: 500;
-            font-size: 0.5056rem;
-            line-height: 0.71rem;
+            @include reg_fonts(#3F4B66, 0.5056rem, 500, 0.71rem, 0);
 
             a {
                 text-decoration: none;
@@ -896,8 +746,7 @@
     }
     
       .column-wrapper {
-        display: flex;
-        justify-content: center;
+        @include display_properties(flex, center, -items, -direction);
         gap: 0.5069rem;
         margin: 0px 7.73px 12.77px 7.73px;
         cursor: pointer;
@@ -912,64 +761,42 @@
         .sub-column{
             width: 33.3333%;
             max-height: 280.64px;
-            display: flex;
-            flex-direction: column;
+            @include display_properties(flex, -content, -items, column);
             padding: 1.115rem 0.8619rem;
 
             h3{
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                font-size: 0.6894rem;
-                line-height: 1.0644rem;
-                color: #3F4B66;
+                @include reg_fonts(#3f4b66, 0.6894rem, 500, 1.0644rem, 0);
             }
 
             > :nth-child(2) {
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                font-size: 0.5144rem;
-                line-height: 0.8113rem;
-                color: #3F4B66;
+                @include reg_fonts(#3f4b66, 0.5144rem, 500, 0.8113rem, 0);
                 margin: 0.3125rem 0rem;
             }
 
             .price-per-month {
-                display: flex;
-                justify-content: flex-start;
-                align-items: baseline;
+                @include display_properties(flex, flex-start, baseline, -direction);
 
                 > :nth-child(1) {
-                    font-family: "Inter", sans-serif;
-                    font-weight: 500;
-                    font-size: 1.0806rem;
-                    line-height: 1.5713rem;
-                    color: #3F4B66;
+                    @include reg_fonts(#3f4b66, 1.0806rem, 500, 1.5713rem, 0);
                 }
                   
                 > :nth-child(2) {
-                    font-family: "Inter", sans-serif;
-                    font-weight: 500;
-                    font-size: 0.5225rem;
-                    line-height: 0.71rem;
-                    color: #3F4B66;
+                    @include reg_fonts(#3f4b66, 0.5225rem, 500, 0.71rem, 0);
                 }
             }
 
             button {
                 max-width: 107.88px;
-                max-height: 27.17px;
+                height: 27.17px;
                 border-radius: 0.2025rem;
-                color: #fff;
+                @include reg_fonts(#fff, 0.5225rem, 500, 0.9125rem, 0);
                 background: #9966FF;
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                font-size: 0.5225rem;
-                line-height: 0.9125rem;
                 border: none;
                 margin-top: 0.8125rem;
                 transition: 0.3s ease;
                 cursor: pointer;
                 box-shadow:  1px 2px 10px -4px black;
+                padding: 5px;
             }
               
             button:hover {
@@ -980,24 +807,15 @@
             }
 
             > :nth-child(5) {
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                font-size: 0.5144rem;
-                line-height: 0.8113rem;
-                color: #3F4B66;
+                @include reg_fonts(#3f4b66, 0.5144rem, 500, 0.8113rem, 0);
                 margin-top: 0.8769rem;
             }
 
             .includes {
                 max-width: 95px;
-                font-family: "Inter", sans-serif;
-                font-weight: 500;
-                font-size: 0.5056rem;
-                line-height: 0.71rem;
-                color: #3F4B66;
-                display: flex;
-                flex-direction: column;
+                @include display_properties(flex, -content, -items, column);
                 gap: 0.75rem;
+                @include reg_fonts(#3f4b66, 0.5056rem, 500, 0.71rem, 0);
 
                 .absolute-check {
                     position: relative;
@@ -1005,8 +823,7 @@
                 }
 
                 > div {
-                    display: flex;
-                    align-items: center;
+                    @include display_properties(flex, -content, center, -direction);
                 }
 
                 img {
@@ -1021,7 +838,8 @@
         }
     }
 }
-/* =======payment======= */
+
+/*      @@ payment        */
 
 .payment-container {
     position: relative;
@@ -1051,22 +869,14 @@
             position: absolute;
             left: 13px;
             top: 13px;
-            font-size: 13.84px;
-            font-weight: 500;
-            line-height: 14.29px;
-            letter-spacing: 0.23px;
-            color: #3f4b66;
+            @include reg_fonts(#3f4b66, 0.865rem, 500, 0.8931rem, 0.0144rem);
         }
         
         > :nth-child(2) {
             position: absolute;
             left: 65px;
             top: 13px;
-            font-size: 12.95px;
-            font-weight: 500;
-            line-height: 14.29px;
-            letter-spacing: 0.23px;
-            color: #727F96;
+            @include reg_fonts(#727F96, 0.8094rem, 500, 0.8931rem, 0.0144rem);
         }
 
         > :nth-child(3) {
@@ -1084,11 +894,7 @@
                 position: absolute;
                 bottom: 6px;
                 left: 14px;
-                font-size: 8.93px;
-                font-weight: 500;
-                line-height: 14.29px;
-                letter-spacing: 0.23px;
-                color: #0A2540;
+                @include reg_fonts(#0a2540, 0.5581rem, 500, 0.8931rem, 0.0144rem);
                 animation: flashing 1s infinite;
             }
         }
@@ -1097,10 +903,7 @@
             position: absolute;
             right: 14px;
             top: 28px;
-            font-size: 15.76px;
-            font-weight: 500;
-            line-height: 14.29px;
-            color: #3F4B66;
+            @include reg_fonts(#3f4b66, 0.985rem, 500, 0.8931rem, 0);
         }
     }
     
@@ -1121,24 +924,14 @@
         position: relative;
 
         .body-positions {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            @include display_properties(flex, center, center, column);
 
             .in-payment {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include display_properties(flex, center, center, -direction);
                 border-radius: 11905.28px;
-                font-family: 'DM Sans', sans-serif;
-                font-weight: 500;
-                font-size: 13.17px;
-                line-height: 23.81px;
-                letter-spacing: 0.15px;
+                @include reg_fonts(#fff, 0.8231rem, 500, 1.4881rem, 0.0094rem);
                 outline: 2px dashed lightgrey;
                 outline-offset: 2px;
-                color: #fff;
             }
 
             > :nth-child(1) {
@@ -1182,7 +975,7 @@
     
 }  
 
-/* Keyframes for the flashing effect */  
+/* @@ Keyframes for the flashing effect */  
 @keyframes flash {  
     0%, 100% {  
         opacity: 0.2;
@@ -1200,5 +993,59 @@
     }  
     50% {  
         color: #0073E6;  
+    }  
+}
+
+          /*      @@ media      */
+
+@media only screen and (max-width: 768px){
+    .middle-part{
+        flex-direction: column !important;
+        gap: unset;
+    }
+    .text-column, .forms-wrapper{
+        width: 100% !important;
+    }
+    .on-column-wrapper{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .subscribe-cont-wrapper{
+        margin-left: -20px;
+        width: 300px;
+         & .subscribe-navigation{
+            width: 300px;
+         }
+    }
+
+    .payment-container{
+        margin-left: 0px !important;
+
+    }
+
+    .on-column-header-img{
+        width: 230px !important;
+    }
+}
+
+@media( max-width: 379px ) {
+    .text-column {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 379px) {  
+    .container {
+        position: relative;
+        top: 700px;
+        left: -360px;
     }  
 }
