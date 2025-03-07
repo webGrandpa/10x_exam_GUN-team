@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url(./_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -8,48 +8,15 @@
 }
 
 $primaryBackground: #0a2540;
-
-@mixin blueBackground {
-  width: 100%;
-  height: auto;
-  background: $primaryBackground;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@mixin paddingCenter($paddingLeft, $paddingRight) {
-  padding-left: $paddingLeft;
-  padding-right: $paddingRight;
-}
-@mixin fontStyle {
-  font-family: "Inter", serif;
-  font-weight: 500;
-}
-@mixin secondaryFontStyle($font_size, $line_height, $letter_spacing, $color) {
-  font-size: $font_size;
-  line-height: $line_height;
-  letter-spacing: $letter_spacing;
-  color: $color;
-}
-@mixin flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin primaryButton {
-  background-color: #635bff;
-  border: none;
-  border-radius: 1.0313rem;
-  cursor: pointer;
-}
+$cardBackground: linear-gradient(
+    rgba(238, 186, 14, 0.377),
+    rgba(240, 185, 33, 0.452)
+  ),
+  url(/media/amazon_delivery.jpeg);
 
 #global-scale {
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-  @include blueBackground;
+  @include background(100%, auto, $primaryBackground, cover, no-repeat, center);
 }
 
 .global-scale-wrapper {
@@ -362,9 +329,6 @@ $primaryBackground: #0a2540;
   }
   &:last-child {
     span {
-      font-size: 0.8719rem;
-      line-height: 1.5rem;
-      letter-spacing: 0.0125rem;
       @include secondaryFontStyle(0.8719rem, 1.5rem, 0.0125rem, #0a2540);
       @include paddingCenter(1rem, 2rem);
     }
@@ -380,8 +344,7 @@ $primaryBackground: #0a2540;
 
 .payments_icon,
 .connect_icon {
-  display: flex;
-  align-items: center;
+  @include flexCenter(center, center);
   gap: 0.875rem;
 }
 
@@ -391,16 +354,7 @@ $primaryBackground: #0a2540;
 }
 
 .cards-wrapper {
-  width: 75%;
-  height: 100%;
-  background: linear-gradient(
-      rgba(238, 186, 14, 0.377),
-      rgba(240, 185, 33, 0.452)
-    ),
-    url(/media/amazon_delivery.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background(75%, 100%, $cardBackground, cover, no-repeat, center);
   border-radius: 0.5rem;
 }
 
@@ -408,9 +362,7 @@ $primaryBackground: #0a2540;
   width: 100%;
   padding: 1.5rem 1.5rem 15.625rem 1.5rem;
   margin-top: 2.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexCenter(space-between, center);
 }
 
 .cards-wrapper p {
@@ -418,9 +370,7 @@ $primaryBackground: #0a2540;
   max-width: 29.25rem;
   padding-right: 1.5rem;
   margin: 0 19.875rem 1.5rem 1.5rem;
-  font-size: 1.5362rem;
-  line-height: 2.25rem;
-  color: #fff;
+  @include secondaryFontStyle(1.5362rem, 2.25rem, 0, #fff);
 }
 
 @media only screen and (max-width: 768px) {
@@ -432,7 +382,6 @@ $primaryBackground: #0a2540;
 
 .partners_logo_wrapper {
   width: 100%;
-  /* height: 8.5%; */
   margin-top: 2.5rem;
   display: flex;
 }
@@ -443,20 +392,19 @@ $primaryBackground: #0a2540;
   cursor: pointer;
 }
 
-.partners-logo:first-child {
-  border-top: 1px solid #635bff;
-}
-
-.partners_logo_wrapper .partners-logo:nth-child(2) {
-  border-top: 1px solid rgba(240, 185, 33, 0.452);
-}
-
-.partners_logo_wrapper .partners-logo:nth-child(3) {
-  border-top: 1px solid rgba(33, 192, 240, 0.445);
-}
-
-.partners-logo:last-child {
-  border-top: 1px solid #f3434391;
+.partners-logo {
+  &:first-child {
+    border-top: 1px solid #635bff;
+  }
+  &:nth-child(2) {
+    border-top: 1px solid rgba(240, 185, 33, 0.452);
+  }
+  &:nth-child(3) {
+    border-top: 1px solid rgba(33, 192, 240, 0.445);
+  }
+  &:last-child {
+    border-top: 1px solid #f3434391;
+  }
 }
 
 /* For 1024px screen */
@@ -476,12 +424,13 @@ $primaryBackground: #0a2540;
     padding: 1rem;
   }
 
-  .main_content_wrapper span,
-  .main_content_wrapper h2,
-  .main_content_wrapper p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
+  .main_content_wrapper {
+    span,
+    h2,
+    p {
+      @include paddingCenter(1rem, 1rem);
+      text-align: center;
+    }
   }
 
   .er_content_cards_wrapper {
@@ -530,14 +479,14 @@ $primaryBackground: #0a2540;
     padding: 1rem;
   }
 
-  .main_content_wrapper span,
-  .main_content_wrapper h2,
-  .main_content_wrapper p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
+  .main_content_wrapper {
+    span,
+    h2,
+    p {
+      @include paddingCenter(1rem, 1rem);
+      text-align: center;
+    }
   }
-
   .er_content_cards_wrapper {
     flex-direction: column;
     gap: 3rem;
@@ -585,12 +534,13 @@ $primaryBackground: #0a2540;
     padding: 1rem;
   }
 
-  .main_content_wrapper span,
-  .main_content_wrapper h2,
-  .main_content_wrapper p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
+  .main_content_wrapper {
+    span,
+    h2,
+    p {
+      @include paddingCenter(1rem, 1rem);
+      text-align: center;
+    }
   }
 
   .er_content_cards_wrapper {
@@ -646,27 +596,21 @@ $primaryBackground: #0a2540;
   width: 100%;
   height: auto;
   background: #f6f9fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 8rem; */
-  padding-bottom: 16.3125rem;
+  @include flexCenter(center, center);
+  @include paddingCenter2(0, 16.3125rem);
   margin-bottom: 200px;
 
   > div {
     width: 100%;
     max-width: 67.5rem;
-    padding-top: 8rem;
-    padding-bottom: 16.3125rem;
+    @include paddingCenter2(8rem, 16.3125rem);
 
     .bfg-main-info-wrapper {
-      /* width: 60.8%; */
       max-width: 50.625rem;
       padding-right: 7rem;
       transform: translateX(10%);
       margin-bottom: 4rem;
-      display: flex;
-      flex-direction: column;
+      @include flexColumn;
       gap: 1.5rem;
 
       span {
@@ -701,8 +645,7 @@ $primaryBackground: #0a2540;
           > div {
             width: 100%;
             padding: 2rem;
-            display: flex;
-            flex-direction: column;
+           @include flexColumn;
             gap: 0.5rem;
 
             > div {
@@ -710,15 +653,13 @@ $primaryBackground: #0a2540;
               height: 2.5rem;
               padding: 0.625rem 1rem 0.625rem 0.625rem;
               gap: 0.75rem;
-              display: flex;
-              align-items: center;
+             @include flexCenter(center, center);
               background: #f6f9fc;
             }
 
             h3 {
-              font-size: 1.5rem;
-              line-height: 2.25rem;
-              letter-spacing: 0%;
+              @include secondaryFontStyle(1.5rem, 2.25rem, 0, #0a2540);
+              
             }
           }
         }
@@ -733,8 +674,7 @@ $primaryBackground: #0a2540;
 @media screen and (max-width: 1024px) {
   #built-for-growth {
     height: auto;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
+   @include paddingCenter2(6rem, 12rem);
   }
 
   .bfg-wrapper {
