@@ -24,9 +24,11 @@
     letter-spacing: $letter_spacing;
     color: $color;
   }
-  @mixin flexColumn {
+  @mixin flexColumn($justifyContent, $alignItems) {
     display: flex;
     flex-direction: column;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
   }
   @mixin flexCenter($justifyContent, $alignItems) {
     display: flex;
