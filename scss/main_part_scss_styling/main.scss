@@ -645,7 +645,7 @@ $cardBackground: linear-gradient(
           > div {
             width: 100%;
             padding: 2rem;
-           @include flexColumn;
+            @include flexColumn;
             gap: 0.5rem;
 
             > div {
@@ -653,13 +653,12 @@ $cardBackground: linear-gradient(
               height: 2.5rem;
               padding: 0.625rem 1rem 0.625rem 0.625rem;
               gap: 0.75rem;
-             @include flexCenter(center, center);
+              @include flexCenter(center, center);
               background: #f6f9fc;
             }
 
             h3 {
               @include secondaryFontStyle(1.5rem, 2.25rem, 0, #0a2540);
-              
             }
           }
         }
@@ -674,12 +673,11 @@ $cardBackground: linear-gradient(
 @media screen and (max-width: 1024px) {
   #built-for-growth {
     height: auto;
-   @include paddingCenter2(6rem, 12rem);
+    @include paddingCenter2(6rem, 12rem);
   }
 
   .bfg-wrapper {
-    padding-top: 6rem;
-    padding-bottom: 12rem;
+    @include paddingCenter2(6rem, 12rem);
   }
 
   .bfg-main-info-wrapper {
@@ -719,13 +717,11 @@ $cardBackground: linear-gradient(
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   #built-for-growth {
     height: auto;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    @include paddingCenter2(5rem, 10rem);
   }
 
   .bfg-wrapper {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    @include paddingCenter2(5rem, 10rem);
   }
 
   .bfg-main-info-wrapper {
@@ -763,13 +759,11 @@ $cardBackground: linear-gradient(
 @media screen and (max-width: 768px) and (min-width: 390px) {
   #built-for-growth {
     height: auto;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
+    @include paddingCenter2(4rem, 8rem);
   }
 
   .bfg-wrapper {
-    padding-top: 4rem;
-    padding-bottom: 8rem;
+    @include paddingCenter2(4rem, 8rem);
   }
 
   .bfg-main-info-wrapper {
@@ -809,13 +803,11 @@ $cardBackground: linear-gradient(
 @media screen and (max-width: 390px) {
   #built-for-growth {
     height: auto;
-    padding-top: 3rem;
-    padding-bottom: 6rem;
+    @include paddingCenter2(3rem, 6rem);
   }
 
   .bfg-wrapper {
-    padding-top: 3rem;
-    padding-bottom: 6rem;
+    @include paddingCenter2(3rem, 6rem);
   }
 
   .bfg-main-info-wrapper {
@@ -867,9 +859,7 @@ $cardBackground: linear-gradient(
   margin-left: auto;
   margin-right: auto;
   padding: 23.8125rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flexColumn(space-between);
   gap: 6rem;
   margin-top: -500px;
 }
@@ -884,8 +874,7 @@ $cardBackground: linear-gradient(
 .dfd-info-wrapper .dfd-main-info-wrapper {
   width: 50%;
   height: 85%;
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   gap: 1.5rem;
   margin-bottom: 4.5625rem;
 }
@@ -893,8 +882,7 @@ $cardBackground: linear-gradient(
 .dfd-info-wrapper .dfd-main-info-wrapper span,
 .dfd-info-wrapper .dfd-main-info-wrapper h2,
 .dfd-info-wrapper .dfd-main-info-wrapper p {
-  padding-left: 1rem;
-  padding-right: 4rem;
+  @include paddingCenter(1rem, 4rem);
 }
 
 .coding-presentation {
@@ -905,9 +893,7 @@ $cardBackground: linear-gradient(
   width: 10.625rem;
   height: 2.0625rem;
   padding: 1rem;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  @include flexCenter(left, center);
   gap: 0.3rem;
   background-color: #00d4ff;
   border: none;
@@ -927,8 +913,7 @@ $cardBackground: linear-gradient(
 .dfd-coding-presentation {
   width: 50%;
   height: 30.625rem;
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
 }
 
 .front-end-info {
@@ -953,19 +938,14 @@ $cardBackground: linear-gradient(
 .dfd-explanation-wrapper {
   width: 100%;
   height: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(center, center);
   flex-wrap: wrap;
 }
 
 .dfd-explanation-wrapper .dfd-explanation {
   width: 25%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexColumn(center, flex-start);
   gap: 0.5rem;
 }
 
@@ -980,16 +960,13 @@ $cardBackground: linear-gradient(
 .dfd-explanation h5,
 .dfd-explanation p,
 .dfd-explanation img {
-  padding-left: 1rem;
-  padding-right: 2rem;
+  @include paddingCenter(1rem, 2rem);
 }
 
 .dfd-explanation h5,
 .dfd-explanation p,
 .dfd-explanation button > span {
-  font-size: 0.8494rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.0125rem;
+  @include secondaryFontStyle(0.8494rem, 1.5rem, 0.0125rem);
 }
 
 .dfd-explanation h5 {
@@ -1011,9 +988,7 @@ $cardBackground: linear-gradient(
   padding: 1rem;
   background-color: transparent;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(center, center);
   cursor: pointer;
 }
 
@@ -1090,8 +1065,8 @@ $cardBackground: linear-gradient(
   .dfd-coding-presentation {
     width: 100%;
     height: 30.625rem;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
+
   }
 
   .front-end-info {
@@ -1154,8 +1129,7 @@ $cardBackground: linear-gradient(
   .dfd-coding-presentation {
     width: 100%;
     height: 30.625rem;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
   }
 
   .front-end-info {
